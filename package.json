@@ -1,0 +1,17 @@
+{
+  "name": "drizzle-crash-course",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  },
+}
