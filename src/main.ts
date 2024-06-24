@@ -4,13 +4,8 @@ import { UserPreferencesTable, UserTable } from "./drizzle/schema";
 import { count, eq, gt } from "drizzle-orm";
 
 async function main() {
-  // const users = await db.select().from(UserTable);
-  const users = await db
-    .update(UserTable)
-    .set({
-      age: 29
-    })
-    .where(eq(UserTable.age, 30));
+  await db.delete(UserTable).where(eq(UserTable.age, 30));
+  const users = await db.select().from(UserTable);
 
   console.log(users);
 }
